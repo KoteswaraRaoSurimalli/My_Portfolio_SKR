@@ -82,8 +82,19 @@ nav ul .fa-solid .fa-xmark {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    animation: fedIn 1s ease;
 }
 
+@keyframes fedIn{
+    from{
+        opacity: 30px;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
 .header-text img {
     width: 450px;
     height: 450px;
