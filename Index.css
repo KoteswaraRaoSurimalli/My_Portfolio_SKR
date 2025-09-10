@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-
+    /* position: sticky; */
     padding: 10px 10%;
 }
 
@@ -250,7 +250,7 @@ nav ul .fa-solid .fa-xmark {
 }
 
 .services-list div {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background: #262626;
      border: 2px solid rgb(39, 168, 207);
     box-shadow: 0 0 10px rgb(12, 209, 186);
