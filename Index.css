@@ -584,10 +584,10 @@ nav .fa-solid {
         color: #e35784;
     }
 
-    .about-col1 img {
-        /* width: 150px; */
+    /* .about-col1 img {
+        width: 150px;
 
-    }
+    } */
     .work-list{
         height: auto;
     }
@@ -599,12 +599,12 @@ nav .fa-solid {
         height: 40vh;
         object-fit:fill;
     }
-    .contact-right{
-        /* margin: auto; */
-        /* padding: 10px 10px; */
-        /* padding: 20px 30px; */
-        /* border: 2px solid red; */
-    }
+    /* .contact-right{
+        margin: auto; 
+        padding: 10px 10px; 
+        padding: 20px 30px; 
+        border: 2px solid red; 
+    } */
     .contact-right input{
             width: 250px;
     }
@@ -620,3 +620,45 @@ nav .fa-solid {
     display: block;
     
 } */
+
+
+/* CTA CALLING */
+.call-now-btn {
+  position: fixed;              /* Stays fixed on screen */
+  bottom: 20px;                 /* Distance from bottom */
+  right: 20px;                  /* Distance from right */
+  background-color: #28a745;    /* Green background */
+  color: white;                 /* White text */
+  padding: 14px 28px;           /* Size */
+  border-radius: 50px;          /* Rounded pill shape */
+  font-size: 18px;              /* Font size */
+  font-weight: bold;            /* Bold text */
+  text-decoration: none;        /* Remove underline */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+
+  /* Pulse Animation */
+  animation: pulse 1.5s infinite;
+}
+
+.call-now-btn:hover {
+  background-color: #218838;   /* Darker green */
+  transform: scale(1.1);       /* Slight zoom */
+}
+
+/* Pulse animation keyframes */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(40, 167, 69, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(40, 167, 69, 0);
+  }
+}
